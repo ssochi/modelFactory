@@ -12,9 +12,8 @@ public class test {
     public static void main(String[] args){
         ModelFactory.addListener(new MapperListener());
         ModelFactory.addListener(new ToStringListener());
-
         task1 task1 = ModelFactory.create(task1.class);
-        task1.setName("this is task 1");
+        task1.setName("task1");
         task2 task2 = task1.map(task2.class);
         System.out.println(task2);
     }
