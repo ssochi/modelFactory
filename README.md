@@ -1,10 +1,10 @@
-##ModelFactory
+## ModelFactory
 
 when i saw my workmates using interface as pojo at first time , i scream it's was a good idea that
 a simple java bean can extends beans as more as it want extends.
 so i create this modelfactory ,using cglib and it is very simple to use.
 
-###First
+### First
 
 you should create a simple interface (or called it model)
 
@@ -16,7 +16,7 @@ you should create a simple interface (or called it model)
 
 ```
 
-####then using modelfactory create it 
+#### then using modelfactory create it 
 
 ```code
     task1 task1 = ModelFactory.create(task1.class);
@@ -24,7 +24,7 @@ you should create a simple interface (or called it model)
     System.out.println(task1.getName());
 ```
 
-####want have a toString function ?
+#### want have a toString function ?
 
 ```code
     ModelFactory.addListener(new ToStringListener());
@@ -32,7 +32,7 @@ you should create a simple interface (or called it model)
     task1.setName("task1");
     System.out.println(task1);
 ```
-####want autoMapper ?
+#### want autoMapper ?
 
 make sure your model extends mapper then add MapperListener
 
@@ -45,6 +45,6 @@ make sure your model extends mapper then add MapperListener
     System.out.println(task2);
 ```
 
-####finally 
+#### finally 
 
 you can expand your own listener make your model more useful
