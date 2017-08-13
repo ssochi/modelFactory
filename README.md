@@ -9,7 +9,7 @@ so i create this modelfactory ,using cglib and it is very simple to use.
 you should create a simple interface (or called it model)
 
 ```code
-    public interface task1 extends mapper{
+    public interface task1 {
         public void setName(String name);
         public String getName();
     }
