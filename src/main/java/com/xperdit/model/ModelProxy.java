@@ -1,17 +1,13 @@
 package com.xperdit.model;
 
 import com.xperdit.model.mInterface.proxyListener;
-import com.xperdit.model.mInterface.task1;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 
 /**
  * Copyright reserved by Beijing Muke Technology Co., Ltd. 8/13 0013.

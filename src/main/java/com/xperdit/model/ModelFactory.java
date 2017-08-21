@@ -1,7 +1,6 @@
 package com.xperdit.model;
 
 import com.xperdit.model.mInterface.proxyListener;
-import com.xperdit.model.mInterface.task1;
 import net.sf.cglib.proxy.Enhancer;
 
 import java.util.ArrayList;
@@ -18,8 +17,8 @@ public class ModelFactory {
 
     public static <T> T create(Class<T> clazz){
         Enhancer enhancer = new Enhancer();
-        enhancer.setSuperclass(task1.class);
-        ModelProxy proxy = new ModelProxy(task1.class);
+        enhancer.setSuperclass(clazz);
+        ModelProxy proxy = new ModelProxy(clazz);
         proxy.setListeners(listeners);
         enhancer.setCallback(proxy);
         return (T) enhancer.create();
